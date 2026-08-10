@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krithika Lakshminarayanan — Software Engineer, ML Infrastructure & Generative AI</title>
+<meta name="description" content="Portfolio of Krithika Lakshminarayanan — Software Engineer building production ML infrastructure, distributed systems, and generative AI pipelines.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>K</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+<div class="grain"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav-wrap" id="navWrap">
+  <nav class="nav container">
+    <a href="#home" class="logo">K<span class="logo-dot">.</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#writing" class="nav-link">Writing</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-blobs" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow reveal">Hi, I'm 👋</p>
+          <h1 class="hero-name reveal">Krithika<br>Lakshminarayanan</h1>
+          <p class="hero-role reveal">
+            <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+          </p>
+          <p class="hero-desc reveal">
+            Software Engineer with <strong>3+ years</strong> building production ML infrastructure, distributed
+            training systems, and generative&nbsp;AI pipelines at scale — currently shipping platform &amp; AI
+            systems for energy operations at <strong>EOG Resources</strong>.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary magnetic"><span>View Projects</span></a>
+            <a href="assets/Krithika_Resume.pdf" class="btn btn-ghost magnetic" download><span>Download Résumé</span></a>
+            <a href="#contact" class="btn btn-ghost magnetic"><span>Get in Touch</span></a>
+          </div>
+
+          <div class="hero-socials reveal">
+            <a href="https://github.com/krithikashreeL" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.74.4-1.26.73-1.55-2.55-.29-5.23-1.29-5.23-5.74 0-1.27.45-2.3 1.19-3.11-.12-.29-.52-1.48.11-3.08 0 0 .98-.31 3.2 1.18a11.1 11.1 0 015.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.6.23 2.79.11 3.08.74.81 1.19 1.84 1.19 3.11 0 4.46-2.69 5.45-5.25 5.74.42.36.78 1.07.78 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.66.79.55A10.52 10.52 0 0023.5 12c0-6.36-5.15-11.5-11.5-11.5z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/krithika-lakshminarayanan-74b97416b/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="https://scholar.google.com/citations?user=hzGuiBkAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.36 3.4A7.49 7.49 0 0112 8.3a7.49 7.49 0 017.64 4.6L24 9.5z"/></svg>
+            </a>
+            <a href="https://medium.com/@krithikasln99" target="_blank" rel="noopener" aria-label="Medium" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42S14.2 15.54 14.2 12s1.51-6.42 3.38-6.42S21 8.46 21 12zm3 0c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75z"/></svg>
+            </a>
+            <a href="mailto:krithikasln99@gmail.com" aria-label="Email" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <svg class="network-art" viewBox="0 0 400 400" role="img" aria-label="Looping animation of a connected systems network, representing distributed infrastructure">
+            <g class="net-lines">
+              <path id="link1" class="net-line" d="M200,200 L92,118"/>
+              <path id="link2" class="net-line" d="M200,200 L312,108"/>
+              <path id="link3" class="net-line" d="M200,200 L88,282"/>
+              <path id="link4" class="net-line" d="M200,200 L314,290"/>
+              <path id="link5" class="net-line" d="M200,200 L200,68"/>
+              <path id="link6" class="net-line" d="M200,200 L200,332"/>
+            </g>
+
+            <g class="net-nodes">
+              <circle class="node node-1" cx="92" cy="118" r="13"/>
+              <circle class="node node-2" cx="312" cy="108" r="10"/>
+              <circle class="node node-3" cx="88" cy="282" r="10"/>
+              <circle class="node node-4" cx="314" cy="290" r="13"/>
+              <circle class="node node-5" cx="200" cy="68" r="9"/>
+              <circle class="node node-6" cx="200" cy="332" r="9"/>
+            </g>
+
+            <circle class="node-center" cx="200" cy="200" r="30"/>
+            <text x="200" y="208" class="node-label" text-anchor="middle">K.</text>
+
+            <g class="net-packets">
+              <circle class="packet" r="4">
+                <animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#link1"/></animateMotion>
+              </circle>
+              <circle class="packet" r="4">
+                <animateMotion dur="2.6s" repeatCount="indefinite" begin="0.4s"><mpath href="#link2"/></animateMotion>
+              </circle>
+              <circle class="packet" r="4">
+                <animateMotion dur="3.6s" repeatCount="indefinite" begin="0.9s"><mpath href="#link3"/></animateMotion>
+              </circle>
+              <circle class="packet" r="4">
+                <animateMotion dur="2.9s" repeatCount="indefinite" begin="1.3s"><mpath href="#link4"/></animateMotion>
+              </circle>
+              <circle class="packet" r="4">
+                <animateMotion dur="3.1s" repeatCount="indefinite" begin="0.2s"><mpath href="#link5"/></animateMotion>
+              </circle>
+              <circle class="packet" r="4">
+                <animateMotion dur="2.7s" repeatCount="indefinite" begin="1.7s"><mpath href="#link6"/></animateMotion>
+              </circle>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats container reveal">
+      <div class="stat" data-target="3" data-suffix="+">
+        <span class="stat-num">0</span><span class="stat-label">Years in Production ML &amp; Data Eng</span>
+      </div>
+      <div class="stat" data-target="60" data-suffix="%">
+        <span class="stat-num">0</span><span class="stat-label">Retrieval Latency Cut (PGVector)</span>
+      </div>
+      <div class="stat" data-target="50" data-suffix="K+">
+        <span class="stat-num">0</span><span class="stat-label">Documents Ingested for LLM Fine-tuning</span>
+      </div>
+      <div class="stat" data-target="200" data-suffix="+">
+        <span class="stat-num">0</span><span class="stat-label">Oil Wells Monitored in Real Time</span>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-tag reveal">01 — About</p>
+      <h2 class="section-title reveal">Engineering the systems behind the model.</h2>
+      <div class="about-grid">
+        <p class="about-text reveal">
+          I'm a software engineer who lives at the intersection of <strong>ML infrastructure</strong>,
+          <strong>distributed systems</strong>, and <strong>generative AI</strong>. At EOG Resources, I build the
+          self-service platforms, GPU training pipelines, and inference services that let researchers and data
+          scientists ship models without fighting infrastructure — and the LLM &amp; vision pipelines that turn
+          unstructured field data into real-time decisions.
+        </p>
+        <p class="about-text reveal">
+          My academic background spans an M.S. in Computer Science from the <strong>University of Houston</strong>
+          and an M.S. in Software Systems from the <strong>Coimbatore Institute of Technology</strong>, with
+          published research on AR-based safety training and cloud data integrity. I'm a Certified Kubernetes
+          Application Developer (CKAD), and I write about data engineering and distributed systems on
+          <a href="https://medium.com/@krithikasln99" target="_blank" rel="noopener">Medium</a>.
+        </p>
+      </div>
+      <p class="about-text reveal" style="margin-top:1.5rem;">
+        Most days I'm somewhere between a Kubernetes manifest and a half-finished Medium draft — I like the kind
+        of problems that only show up once a system is actually running at scale.
+      </p>
+
+      <div class="badge-row reveal">
+        <span class="badge">Kubernetes · CKAD</span>
+        <span class="badge">Distributed Training</span>
+        <span class="badge">LLM Fine-tuning</span>
+        <span class="badge">Vision-Language Models</span>
+        <span class="badge">Semantic Search</span>
+        <span class="badge">Event-driven Systems</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <p class="section-tag reveal">02 — Experience</p>
+      <h2 class="section-title reveal">Where the work happened.</h2>
+      <p class="section-sub reveal">Two roles, one company, three years — turning infrastructure pain points into platforms reservoir engineers actually want to use.</p>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="exp-head">
+              <div>
+                <h3>Data Engineer II</h3>
+                <p class="exp-company">EOG Resources</p>
+              </div>
+              <span class="exp-date">2023 — Present</span>
+            </div>
+
+            <div class="tabs" data-tabs>
+              <div class="tab-list" role="tablist">
+                <button class="tab-btn active" data-tab="infra">ML Infra &amp; Distributed Systems</button>
+                <button class="tab-btn" data-tab="genai">Generative AI &amp; LLM</button>
+                <button class="tab-btn" data-tab="vlm">VLM &amp; Computer Vision</button>
+                <button class="tab-btn" data-tab="data">Data Platform &amp; IoT</button>
+                <button class="tab-btn" data-tab="control">Reactive Control Systems</button>
+              </div>
+
+              <div class="tab-panel active" data-panel="infra">
+                <ul>
+                  <li>Built a Kubernetes + Dagster self-service ML platform enabling 10+ Reservoir Engineers to independently validate models, cutting Data Science review cycles by <strong>40%</strong>.</li>
+                  <li>Developed a Slurm CLI tool for Data Scientists to submit and monitor distributed training jobs; configured multi-node GPU topology, reducing model training time by <strong>35%</strong>.</li>
+                  <li>Deployed FastAPI inference services handling 5+ team workloads with sub-second response times at high concurrency; standardized experiment tracking and deployment via MLflow, accelerating release velocity by <strong>30%</strong>.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="genai">
+                <ul>
+                  <li>Architected PGVector semantic search over unstructured document corpora, reducing retrieval latency by <strong>60%</strong>.</li>
+                  <li>Built Amazon Textract ingestion pipelines for Llama and Mistral fine-tuning, processing <strong>50K+</strong> documents at scale.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="vlm">
+                <ul>
+                  <li>Built a vision-language model inference pipeline using Gemini VLM and DSPy prompt optimization to detect oil pipeline leaks from aerial and ground imagery, replacing manual inspection workflows.</li>
+                  <li>Designed a DSPy-based prompt optimization loop to iteratively improve leak-detection precision; integrated the inference service into existing IoT monitoring infrastructure for real-time, image-triggered alerting.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="data">
+                <ul>
+                  <li>Engineered IoT ingestion pipelines for 500+ industrial sensors, processing <strong>7,500+</strong> data tags per minute company-wide.</li>
+                  <li>Built a digital-twin audio pipeline for real-time equipment health monitoring with rule-based anomaly detection.</li>
+                  <li>Architected a RabbitMQ event-driven messaging layer, increasing system throughput by <strong>25%</strong>; implemented Datadog telemetry and alerting across all pipelines, reducing downtime by <strong>40%</strong>.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="control">
+                <ul>
+                  <li>Designed a low-latency hydraulic control model monitoring oil sales point pressure across <strong>200+ wells</strong>, triggering automated decisions (choking, injection reduction, shut-ins) within milliseconds.</li>
+                  <li>Achieved <strong>zero safety incidents</strong> post-deployment.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="exp-head">
+              <div>
+                <h3>Data Engineer Intern</h3>
+                <p class="exp-company">EOG Resources</p>
+              </div>
+              <span class="exp-date">May — Aug 2022</span>
+            </div>
+            <ul>
+              <li>Computed 3D tortuosity indices across 3,000+ well sites in Python, building a regression model correlating borehole deviation with production output.</li>
+              <li>Developed an interactive geospatial dashboard used by 1,000+ engineers for spatial coverage analysis, replacing ad hoc manual reporting.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-row reveal">
+        <div class="edu-card">
+          <span class="edu-icon">🎓</span>
+          <div>
+            <h4>M.S. Computer Science</h4>
+            <p>University of Houston · GPA 3.8/4.0</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <span class="edu-icon">🎓</span>
+          <div>
+            <h4>M.S. Software Systems</h4>
+            <p>Coimbatore Institute of Technology · GPA 9.0/10</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <span class="edu-icon">✓</span>
+          <div>
+            <h4>CKAD</h4>
+            <p>Certified Kubernetes Application Developer · Linux Foundation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-tag reveal">03 — Projects</p>
+      <h2 class="section-title reveal">Things I've built.</h2>
+
+      <div class="filter-row reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml-infra">ML Infra</button>
+        <button class="filter-btn" data-filter="genai">GenAI &amp; LLM</button>
+        <button class="filter-btn" data-filter="cv">Computer Vision</button>
+        <button class="filter-btn" data-filter="systems">Systems &amp; IoT</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <article class="project-card reveal" data-category="ml-infra">
+          <span class="featured-badge">Featured</span>
+          <div class="project-top">
+            <span class="project-icon">⎈</span>
+            <div class="project-tags"><span>Kubernetes</span><span>Dagster</span></div>
+          </div>
+          <h3>Self-Service ML Platform</h3>
+          <p>Kubernetes + Dagster platform letting 10+ reservoir engineers validate models independently, cutting Data Science review cycles by 40%.</p>
+          <div class="project-metric">−40% review cycle time</div>
+        </article>
+
+        <article class="project-card reveal" data-category="ml-infra">
+          <div class="project-top">
+            <span class="project-icon">▦</span>
+            <div class="project-tags"><span>Slurm</span><span>Multi-GPU</span></div>
+          </div>
+          <h3>Distributed Training CLI</h3>
+          <p>Slurm-based CLI for submitting and monitoring distributed training jobs, with multi-node GPU topology tuning.</p>
+          <div class="project-metric">−35% training time</div>
+        </article>
+
+        <article class="project-card reveal" data-category="ml-infra">
+          <div class="project-top">
+            <span class="project-icon">⚡</span>
+            <div class="project-tags"><span>FastAPI</span><span>MLflow</span></div>
+          </div>
+          <h3>Inference &amp; Experiment Tracking</h3>
+          <p>Sub-second FastAPI inference services at high concurrency, with standardized MLflow experiment tracking and deployment.</p>
+          <div class="project-metric">+30% release velocity</div>
+        </article>
+
+        <article class="project-card reveal" data-category="genai">
+          <span class="featured-badge">Featured</span>
+          <div class="project-top">
+            <span class="project-icon">🔎</span>
+            <div class="project-tags"><span>PGVector</span><span>Textract</span></div>
+          </div>
+          <h3>Semantic Search &amp; LLM Fine-tuning</h3>
+          <p>PGVector semantic search over unstructured documents, feeding a Textract ingestion pipeline for Llama &amp; Mistral fine-tuning across 50K+ docs.</p>
+          <div class="project-metric">−60% retrieval latency</div>
+        </article>
+
+        <article class="project-card reveal" data-category="genai cv">
+          <span class="featured-badge">Featured</span>
+          <div class="project-top">
+            <span class="project-icon">👁</span>
+            <div class="project-tags"><span>Gemini VLM</span><span>DSPy</span></div>
+          </div>
+          <h3>VLM Pipeline Leak Detection</h3>
+          <p>Vision-language model pipeline using Gemini VLM and DSPy prompt optimization to detect oil pipeline leaks from aerial &amp; ground imagery, wired into real-time IoT alerting.</p>
+          <div class="project-metric">Replaced manual inspection</div>
+        </article>
+
+        <article class="project-card reveal" data-category="systems">
+          <div class="project-top">
+            <span class="project-icon">📡</span>
+            <div class="project-tags"><span>RabbitMQ</span><span>Datadog</span></div>
+          </div>
+          <h3>IoT Ingestion &amp; Digital Twin</h3>
+          <p>Ingestion pipelines for 500+ industrial sensors processing 7,500+ tags/min, plus an audio-based digital twin for equipment health monitoring.</p>
+          <div class="project-metric">+25% throughput, −40% downtime</div>
+        </article>
+
+        <article class="project-card reveal" data-category="systems">
+          <div class="project-top">
+            <span class="project-icon">🛢</span>
+            <div class="project-tags"><span>Reactive Control</span><span>Hydraulics</span></div>
+          </div>
+          <h3>Regional Gallopt Control System</h3>
+          <p>Low-latency hydraulic control model monitoring sales-point pressure across 200+ wells, triggering automated choking &amp; shut-in decisions within milliseconds.</p>
+          <div class="project-metric">Zero safety incidents</div>
+        </article>
+
+      </div>
+
+      <div class="oss-block reveal">
+        <div class="oss-head">
+          <h3>Open source &amp; side projects</h3>
+          <a href="https://github.com/krithikashreeL" target="_blank" rel="noopener" class="link-arrow">View all on GitHub →</a>
+        </div>
+        <div class="oss-grid">
+          <a class="oss-card" href="https://github.com/krithikashreeL/Analysis-and-Forcasting-for-COVID-19-using-ML" target="_blank" rel="noopener">
+            <h4>COVID-19 Analysis &amp; Forecasting</h4>
+            <p>Forecasting &amp; trend analysis using ML on COVID-19 case data.</p>
+            <span class="oss-lang"><i style="background:#3572A5"></i>Jupyter Notebook</span>
+          </a>
+          <a class="oss-card" href="https://github.com/krithikashreeL/Analysis-on-OMPI" target="_blank" rel="noopener">
+            <h4>Analysis on OMPI</h4>
+            <p>Building &amp; benchmarking OpenMPI for parallel computing workloads.</p>
+            <span class="oss-lang"><i style="background:#e34c26"></i>HTML</span>
+          </a>
+          <a class="oss-card" href="https://github.com/krithikashreeL/Leetcode" target="_blank" rel="noopener">
+            <h4>LeetCode</h4>
+            <p>Collection of LeetCode solutions for coding-interview prep.</p>
+            <span class="oss-lang"><i style="background:#3572A5"></i>Python</span>
+          </a>
+          <a class="oss-card" href="https://github.com/krithikashreeL/Worklog-summary-extension" target="_blank" rel="noopener">
+            <h4>Worklog Summary Extension</h4>
+            <p>VS Code extension that turns weekly git activity into plain-English brag docs.</p>
+            <span class="oss-lang"><i style="background:#3178c6"></i>TypeScript</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WRITING / PUBLICATIONS ===== -->
+  <section class="section section-alt" id="writing">
+    <div class="container">
+      <p class="section-tag reveal">04 — Writing &amp; Research</p>
+      <h2 class="section-title reveal">What I write &amp; publish.</h2>
+
+      <div class="pub-list reveal">
+        <div class="pub-card">
+          <span class="pub-venue">ASEE 2022</span>
+          <h4>Leveraging Marker-based AR for Just-in-Time Safety Information Presentation</h4>
+        </div>
+        <div class="pub-card">
+          <span class="pub-venue">ICCCNT 2018</span>
+          <h4>Ensuring Data Integrity in Cloud Storage</h4>
+        </div>
+      </div>
+      <a href="https://scholar.google.com/citations?user=hzGuiBkAAAAJ&hl=en" target="_blank" rel="noopener" class="link-arrow reveal">View full profile on Google Scholar →</a>
+
+      <div class="writing-grid reveal" id="mediumGrid">
+        <a class="article-card" href="https://medium.com/@krithikasln99/build-your-first-airflow-dag-0539ee6a118b" target="_blank" rel="noopener">
+          <span class="article-date">Jun 9</span>
+          <h4>Build Your First Airflow DAG</h4>
+          <p>A practical walkthrough of going from a silently-failing script to an observable, scheduled DAG.</p>
+        </a>
+        <a class="article-card" href="https://medium.com/@krithikasln99/how-to-fix-a-slow-aggregator-api-f33fd1d51311" target="_blank" rel="noopener">
+          <span class="article-date">Jun 4</span>
+          <h4>How to Fix a Slow Aggregator API</h4>
+          <p>Why "one-stop-shop" dashboard endpoints get slow — and how to fix the fan-out.</p>
+        </a>
+        <a class="article-card" href="https://medium.com/@krithikasln99/beyond-the-modern-data-stack-implementing-cdc-in-relational-databases-5d2a2e37a894" target="_blank" rel="noopener">
+          <span class="article-date">Jun 1</span>
+          <h4>Beyond the Modern Data Stack: Implementing CDC</h4>
+          <p>Change Data Capture in relational databases, beyond the Databricks pitch decks.</p>
+        </a>
+        <a class="article-card" href="https://medium.com/@krithikasln99/the-production-llm-bottleneck-engineering-around-api-rate-limits-8b17cf129524" target="_blank" rel="noopener">
+          <span class="article-date">May 26</span>
+          <h4>The Production LLM Bottleneck</h4>
+          <p>Why paying customers still get HTTP 429s, and the strategies that actually fix it.</p>
+        </a>
+        <a class="article-card" href="https://medium.com/@krithikasln99/the-accidental-ddos-how-to-gracefully-handle-failing-shared-services-01caf7ab71d7" target="_blank" rel="noopener">
+          <span class="article-date">May 26</span>
+          <h4>The Accidental DDoS</h4>
+          <p>Gracefully handling failing shared services — the architecture we've all written without naming it.</p>
+        </a>
+        <a class="article-card" href="https://medium.com/@krithikasln99/the-invisible-prism-how-math-mimics-the-human-ear-to-decode-sound-007f1efb34e0" target="_blank" rel="noopener">
+          <span class="article-date">May 21</span>
+          <h4>The Invisible Prism</h4>
+          <p>How math mimics the human ear to decode sound — from waveforms to spectrograms.</p>
+        </a>
+      </div>
+      <a href="https://medium.com/@krithikasln99" target="_blank" rel="noopener" class="link-arrow reveal">Read more on Medium →</a>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-tag reveal">05 — Skills</p>
+      <h2 class="section-title reveal">Tools of the trade.</h2>
+
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <h4>Cloud &amp; Orchestration</h4>
+          <div class="tag-row">
+            <span>Kubernetes (CKAD)</span><span>Slurm</span><span>Docker</span><span>Rancher</span><span>GitHub Actions</span><span>Terraform</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Workflow &amp; Messaging</h4>
+          <div class="tag-row">
+            <span>Apache Airflow</span><span>Dagster</span><span>RabbitMQ</span><span>MQTT</span><span>Pulsar</span><span>Azure Event Hub</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Data Systems</h4>
+          <div class="tag-row">
+            <span>PostgreSQL (PGVector)</span><span>Oracle</span><span>Amazon S3</span><span>Apache NiFi</span><span>Apache Spark</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Generative AI &amp; MLOps</h4>
+          <div class="tag-row">
+            <span>MLflow</span><span>LLM Fine-tuning (Llama, Mistral)</span><span>Gemini VLM</span><span>DSPy</span><span>Amazon Textract</span><span>Semantic Search</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Languages &amp; Monitoring</h4>
+          <div class="tag-row">
+            <span>Python</span><span>TypeScript</span><span>SQL</span><span>Datadog</span><span>Grafana</span><span>Elastic APM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <p class="section-tag reveal">06 — Contact</p>
+      <h2 class="section-title big reveal">Let's build something.</h2>
+      <p class="contact-sub reveal">Open to conversations about ML infrastructure, generative AI systems, and distributed platforms. The fastest way to reach me is email.</p>
+
+      <div class="contact-row reveal">
+        <button class="email-copy" id="emailCopy">
+          <span id="emailText">krithikasln99@gmail.com</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+        </button>
+        <span class="copy-toast" id="copyToast">Copied!</span>
+      </div>
+
+      <div class="contact-or reveal">or send a note</div>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+        </div>
+        <textarea name="message" placeholder="What's on your mind?" required></textarea>
+        <button type="submit" class="btn btn-primary magnetic" style="justify-self:start;"><span>Send Message</span></button>
+      </form>
+
+      <div class="hero-socials reveal" style="margin-top:2rem;">
+        <a href="https://github.com/krithikashreeL" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.74.4-1.26.73-1.55-2.55-.29-5.23-1.29-5.23-5.74 0-1.27.45-2.3 1.19-3.11-.12-.29-.52-1.48.11-3.08 0 0 .98-.31 3.2 1.18a11.1 11.1 0 015.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.6.23 2.79.11 3.08.74.81 1.19 1.84 1.19 3.11 0 4.46-2.69 5.45-5.25 5.74.42.36.78 1.07.78 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.66.79.55A10.52 10.52 0 0023.5 12c0-6.36-5.15-11.5-11.5-11.5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/krithika-lakshminarayanan-74b97416b/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="https://scholar.google.com/citations?user=hzGuiBkAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.36 3.4A7.49 7.49 0 0112 8.3a7.49 7.49 0 017.64 4.6L24 9.5z"/></svg>
+        </a>
+        <a href="https://medium.com/@krithikasln99" target="_blank" rel="noopener" aria-label="Medium" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42S14.2 15.54 14.2 12s1.51-6.42 3.38-6.42S21 8.46 21 12zm3 0c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Krithika Lakshminarayanan. Designed &amp; built from scratch.</p>
+    <button class="to-top" id="toTop" aria-label="Back to top">↑ Top</button>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
